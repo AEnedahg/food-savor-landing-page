@@ -1,0 +1,8 @@
+@import './abstract/mixins', './abstract/variables', './base/normalize','./base/reset', 
+'./base/typography','./components/button', './components/card',
+'./layout/cta','./layout/header','./layout/hero','./layout/what-they-say',
+'./layout/what-we-do','./layout/header';
+
+body {
+  background-color: $clr-primary-200;
+}

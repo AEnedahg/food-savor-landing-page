@@ -1,0 +1,40 @@
+@import "../abstract/variables";
+@import "../base/typography";
+
+@mixin what-we-do-card {
+  background-color: $clr-primary-300;
+  padding: 40px;
+  border-radius: 30px;
+}
+@mixin what-they-say-card {
+  background-color: $clr-primary-400;
+  padding: 40px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin what-we-do-card-title {
+  font: {
+    size: 3.2rem;
+    family: $ff-secondary;
+    weight: map-get($font-weights, medium);
+  }
+  text-align: center;
+}
+@mixin what-they-say-card-text {
+  font: {
+    size: 3.5rem;
+    family: $ff-primary;
+    weight: map-get($font-weights, regular);
+ }
+}
+@mixin what-they-say-card-cite {
+  font: {
+    size: 2.8rem;
+    family: $ff-primary;
+    weight: map-get($font-weights, bold);
+    style: normal;
+  }
+}

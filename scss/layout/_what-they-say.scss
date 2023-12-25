@@ -1,0 +1,148 @@
+@import '../abstract/variables';
+@import '../base/typography';
+@import '../base/reset';
+@import '../components/button';
+
+.what-they-say {
+  margin-top: 108px;
+  margin-left: 93px;
+  margin-right: 94px;
+  &__pre-heading {
+    @include section-preheading;
+    margin-bottom: 20px;
+  }
+  &__main-heading {
+    @include section-heading;
+    margin-bottom: 40px;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 23px;
+    &--item {
+      @include what-they-say-card;
+      position: relative;
+      &-quotes {
+        position: absolute;
+        top: -30px;
+        left: 10px;
+        z-index: 1;
+      }
+      &-para {
+        @include what-they-say-card-text;
+      }
+      &-cite {
+        @include what-they-say-card-cite;
+      }
+    }
+  }
+}
+
+/* xs-phone */
+@media (min-width: 320px) and (max-width: 374px) {
+  .what-they-say {
+    margin-left: 0;
+    margin-right: 0;
+    &__main-heading {
+      margin-bottom: 50px;
+      font-size: 3.2rem;
+    }
+    &__grid {
+      grid-template-columns: 0.9fr;
+      row-gap: 60px;
+      margin-left: 20px;
+    }
+  }
+  .what-they-say__grid--item-para {
+    font-size: 2.2rem;
+  }
+  .what-they-say__grid--item-cite {
+    font-size: 1.8rem;
+  }
+}
+/* phone */
+@media (min-width: 375px) and (max-width: 474px) {
+  .what-they-say {
+    margin-left: 0;
+    margin-right: 0;
+    &__main-heading {
+      margin-bottom: 50px;
+      font-size: 3.5rem;
+    }
+    &__grid {
+      grid-template-columns: 0.9fr;
+      row-gap: 60px;
+      margin-left: 35px;
+    }
+  }
+  .what-they-say__grid--item-para {
+    font-size: 2.4rem;
+  }
+  .what-they-say__grid--item-cite {
+    font-size: 2.0rem;
+  }
+}
+/* xs */
+@media (min-width: 475px) and (max-width: 639px) {
+  .what-they-say {
+    margin-left: 0;
+    margin-right: 0;
+    &__main-heading {
+      margin-bottom: 50px;
+      font-size: 3.8rem;
+    }
+    &__grid {
+      grid-template-columns: 0.9fr;
+      row-gap: 60px;
+      margin-left: 45px;
+    }
+  }
+}
+/* sm */
+@media (min-width: 640px) and (max-width: 767px) {
+  .what-they-say__main-heading {
+    margin-bottom: 50px;
+    font-size: 4.2rem;
+  }
+  .what-they-say__grid {
+    justify-content: center;
+    grid-template-columns: 0.9fr;
+    row-gap: 60px;
+  }
+}
+/* md */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .what-they-say__main-heading {
+    margin-bottom: 50px;
+  }
+  .what-they-say__grid {
+    justify-content: center;
+    grid-template-columns: 0.75fr;
+    row-gap: 50px;
+  }
+}
+/* lg */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .what-they-say__main-heading {
+    margin-bottom: 50px;
+  }
+  .what-they-say__grid {
+    justify-content: center;
+    grid-template-columns: 0.5fr;
+    row-gap: 50px;
+  }
+}
+/* xl */
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .what-they-say {
+    margin-right: 40px;
+  }
+}
+/* 2xl */
+@media (min-width: 1440px) and (max-width: 1536px) {
+  
+}
+/* 3xl */
+@media (min-width: 1537px) {
+
+}

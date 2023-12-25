@@ -1,0 +1,59 @@
+@import "../abstract/variables";
+@import "../base/typography";
+
+@mixin sign-up-btn {
+  width: 179px;
+  height: 70px;
+  background-color: $clr-primary-500;
+  border-radius: 45px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: $clr-neutral-0;
+  a {
+    color: inherit;
+    font: {
+    size: 2rem;
+    weight: map-get($font-weights, bold);
+    family: $ff-secondary;
+  }
+ }
+}
+@mixin get-started-btn {
+  width: 235px;
+  height: 70px;
+  background-color: $clr-primary-500;
+  border-radius: 45px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: $clr-neutral-0;
+  a {
+    color: inherit;
+    font: {
+      size: 2.8rem;
+      weight: map-get($font-weights, bold);
+      family: $ff-secondary;
+    }
+  }
+}
+@mixin join-now-btn {
+  width: 235px;
+  height: 67px;
+  background-color: $clr-primary-500;
+  border-radius: 45px;
+  outline: none;
+  border: none;
+  &:hover {
+    background-color: lighten($clr-primary-500, 7%);
+  }
+  cursor: pointer;
+  a {
+    color: $clr-neutral-0;
+    font: {
+      size: 2.8rem;
+      weight: map-get($font-weights, bold);
+      family: $ff-secondary;
+    }
+  }
+}

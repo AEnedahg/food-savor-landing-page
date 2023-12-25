@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+@import '../base/reset', '../abstract/variables';
+// font
+$ff-primary: 'Work Sans', sans-serif;
+$ff-secondary: 'Roboto', sans-serif;
+$ff-tertiary: 'Open Sans', sans-serif;
+
+$font-weights: (
+  regular: 400,
+  medium: 500,
+  semi-bold: 600,
+  bold: 700
+);
+@mixin nav-link {
+  font: {
+    size: 2rem;
+    weight: 700;
+    family: $ff-secondary;
+  }
+  color: $clr-neutral-0;
+}
+@mixin headline-1 ($text-color) {
+font: {
+  size: 8rem;
+  family: $ff-secondary;
+  weight: map-get($font-weights, bold);
+  }
+  color: $text-color;
+}
+@mixin hero-para {
+  font: {
+    size: 2.4rem;
+    family: $ff-primary;
+    weight: map-get($font-weights, regular);
+  }
+  color: $clr-neutral-1000;
+}
+@mixin hero-happy-customers {
+  font: {
+    size: 2rem;
+    family: $ff-secondary;
+    weight: map-get($font-weights, bold);
+  }
+color: $clr-neutral-1000;
+}
+@mixin hero-reviews {
+  font: {
+    size: 2rem;
+    family: $ff-secondary;
+    weight: map-get($font-weights, regular);
+  }
+  color: rgba(0,0,0,0.54)
+}
+@mixin section-preheading {
+  font: {
+    size: 3rem;
+    family: $ff-tertiary;
+    weight: map-get($font-weights, regular);
+  }
+  color: $clr-primary-600;
+  text-align: center;
+}
+@mixin section-heading {
+  font: {
+    size: 4.8rem;
+    family: $ff-secondary;
+    weight: map-get($font-weights, bold);
+  }
+  text-align: center;
+}

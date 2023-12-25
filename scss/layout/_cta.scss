@@ -1,0 +1,128 @@
+@import '../abstract/variables';
+@import '../base/typography';
+@import '../base/reset';
+@import '../components/button';
+
+.cta {
+  background-color: $clr-neutral-0;
+  border-radius: 30px;
+  margin: 118px 109px 109px 103px;
+  display: flex;
+  gap: 129px;
+  padding: 70px 98px;
+  &__heading {
+    @include section-heading;
+    text-align: left;
+  }
+  &__btn {
+    @include join-now-btn;
+  }
+}
+
+/* xs-phone */
+@media (min-width: 320px) and (max-width: 374px) {
+  .cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    padding: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    &__heading {
+      text-align: center;
+      font-size: 2.4rem;
+    }
+    &__btn {
+      width: 90%;
+      height: 40px;
+      a {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+/* phone */
+@media (min-width: 375px) and (max-width: 474px) {
+  .cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    &__heading {
+      text-align: center;
+      font-size: 2.8rem;
+    }
+    &__btn {
+      width: 90%;
+      a {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
+/* xs */
+@media (min-width: 475px) and (max-width: 639px) {
+  .cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    &__heading {
+      text-align: center;
+      font-size: 3.8rem;
+    }
+  }
+}
+/* sm */
+@media (min-width: 640px) and (max-width: 767px) {
+  .cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    &__heading {
+      text-align: center;
+      font-size: 4.2rem;
+    }
+  }
+}
+/* md */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    &__heading {
+      text-align: center;
+    }
+  }
+}
+/* lg */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    &__heading {
+      text-align: center;
+    }
+  }
+}
+/* xl */
+@media (min-width: 1280px) and (max-width: 1439px) {
+
+}
+/* 2xl */
+@media (min-width:1440px) and (max-width: 1536px) {
+  
+}
+/* 3xl */
+@media (min-width: 1537px) {
+
+}
